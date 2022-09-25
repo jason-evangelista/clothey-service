@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": false,
+    "lib": ["ES2021"],
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "strict": true,
+    "target": "esnext",
+    "resolveJsonModule": true,
+    "baseUrl": "./src",
+    "outDir": "./dist",
+    "paths": {
+      "@mapModel/*": ["map-model/*"],
+      "@middleware/*": ["middleware/*"],
+      "@mutation/*": ["mutation/*"],
+      "@query/*": ["query/*"],
+      "@schemaType/*": ["schema-type/*"],
+      "@resolver/*": ["resolver/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

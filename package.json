@@ -1,0 +1,38 @@
+{
+  "name": "clothe-commerce-service",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon main.ts",
+    "jwt-init": "ts-node jwt.generate",
+    "eslint-init": "yarn eslint --init"
+  },
+  "dependencies": {
+    "@types/module-alias": "^2.0.1",
+    "apollo-server-core": "^3.10.2",
+    "apollo-server-express": "^3.10.2",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "graphql": "^16.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "module-alias": "^2.2.2",
+    "sequelize": "^6.22.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "eslint": "^8.23.1",
+    "typescript": "^4.8.3"
+  },
+  "_moduleAliases": {
+    "@mapModel": "./src/map-model",
+    "@middleware": "./src/middleware",
+    "@mutation": "./src/mutation",
+    "@query": "./src/query",
+    "@schemaType": "./src/schema-type",
+    "@resolver": "./src/resolver"
+  }
+}
